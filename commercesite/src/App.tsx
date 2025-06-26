@@ -3,6 +3,7 @@ import Ribbon from "./components/Ribbon";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Games from "./pages/Games";
+import Consoles from "./pages/Consoles";
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/games/:category?" element={<Games/>}></Route>
+        <Route path="/consoles/:category?" element={<Consoles/>}></Route>
         <Route path="*" element={<>404. Page not found!</>} />
       </Routes>
     </div>

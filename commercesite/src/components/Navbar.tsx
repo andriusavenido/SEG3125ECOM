@@ -2,10 +2,10 @@ import { Link } from "react-router";
 
 const Navbar: React.FC = () => {
     return (
-        <div className="navbar bg-light text-info p-2 px-4 d-flex align-items-center justify-content-between row">
+        <div className="navbar bg-light text-info p-3 px-4 d-flex align-items-center justify-content-center row">
 
             <div className="col-3">
-                <h1 className="m-0 fw-bold">The Gaming Corner</h1>
+                <h1 className="m-0 fw-bold"><i className="bi bi-joystick"></i> The Gaming Corner</h1>
             </div>
 
             <div className="col-6 d-flex justify-content-center">
