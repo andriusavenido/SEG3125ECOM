@@ -9,7 +9,32 @@
         "tags": ["Single-player", "Story Rich", "Open World", "Controller Support","Best Seller", "New Release","Upcoming"],
         "release_date": "2024-10-15",
         "developer": "RealmForge Studios",
-        "publisher": "IndieVault",
         "availability": ["In Stock", "Digital Only"]
+    },
+    {
+        "title": "Death Stranding 2: On the Beach",
+        "img":"deathstranding2ps5.png",
+         "platform": "PlayStation 5",
+        "genre": ["Adventure", "Action"],
+        "age_rating": "Mature (M)",
+        "price": 89.99,
+        "og_price": 89.99,
+        "tags": ["Single-player", "Story Rich", "New Release"],
+        "release_date": "2025-06-26",
+        "developer": "PlayStation Studios",
+        "availability": ["In Stock"]
+    },
+    {
+        "title": "Cyberpunk 2077: Ultimate Edition",
+        "img":"cyberpunkswitch.png",
+         "platform": "Nintendo Switch 2",
+        "genre": ["Adventure", "Action","RPG"],
+        "age_rating": "Mature (M)",
+        "price": 99.99,
+        "og_price": 99.99,
+        "tags": ["Single-player", "Story Rich","Open World", "New Release"],
+        "release_date": "2025-06-05",
+        "developer": "CD Projekt Red",
+        "availability": ["In Stock"]
     }
 ]
