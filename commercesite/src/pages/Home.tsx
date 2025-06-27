@@ -15,7 +15,7 @@ const Home: React.FC = () => {
 
 const HeroCarousel: React.FC = () => {
     return (
-        <div id="heroCarousel" className="carousel slide mt-5" data-bs-ride="carousel" data-bs-interval="8000">
+        <div id="heroCarousel" className="carousel slide mt-5" data-bs-ride="carousel" data-bs-interval="5000">
             <div className="carousel-inner">
                   <div className="carousel-item active">
                     <div className="d-flex flex-row w-100" style={{ height: '50vh' }}>
@@ -56,7 +56,7 @@ const HeroCarousel: React.FC = () => {
                             <h3 className="fw-bold display-4">
                               Extensive Video Game Catalogue.  <span className="text-light">Retro and Modern. All Genres.</span>  View our game listings now!
                             </h3>
-                            <Link to="/book" className="btn btn-secondary mt-3 rounded-pill fw-bold fs-4 shadow-lg">
+                            <Link to="/games" className="btn btn-secondary mt-3 rounded-pill fw-bold fs-4 shadow-lg">
                                 SHOP NOW
                             </Link>
                         </div>
@@ -78,7 +78,7 @@ const HeroCarousel: React.FC = () => {
                             <h3 className="fw-bold display-4">
                              <span className="text-info">Yes, We Have Stock!</span> The all new Nintendo Switch 2 featuring up to 4k Docked Resolution, 7.9-in LCD Screen, and 256GB of storage.
                             </h3>
-                            <Link to="/book" className="btn btn-primary mt-3 rounded-pill fw-bold fs-4 shadow-lg">
+                            <Link to="/consoles" className="btn btn-light mt-3 rounded-pill fw-bold fs-4 shadow-lg">
                                 SHOP NOW
                             </Link>
                         </div>

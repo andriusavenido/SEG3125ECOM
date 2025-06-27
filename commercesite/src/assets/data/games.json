@@ -1,13 +1,12 @@
 [
     {
-        "id": "game001",
         "title": "Legend of Realms",
         "platform": ["Nintendo Switch", "PC"],
         "genre": ["Adventure", "RPG"],
         "age_rating": "Teen (T)",
         "price": 49.99,
         "og_price": 79.99,
-        "tags": ["Single-player", "Story Rich", "Open World", "Controller Support"],
+        "tags": ["Single-player", "Story Rich", "Open World", "Controller Support","Best Seller", "New Release","Upcoming"],
         "release_date": "2024-10-15",
         "developer": "RealmForge Studios",
         "publisher": "IndieVault",
