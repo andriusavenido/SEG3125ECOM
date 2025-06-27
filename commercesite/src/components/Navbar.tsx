@@ -2,7 +2,7 @@ import { Link } from "react-router";
 
 const Navbar: React.FC = () => {
     return (
-        <div className="navbar bg-light text-info p-3 px-4 d-flex align-items-center justify-content-center row">
+        <div className="navbar  bg-light text-info p-3 px-4 d-flex align-items-center justify-content-center row">
 
             <div className="col-3">
                 <h1 className="m-0 fw-bold"><i className="bi bi-joystick"></i> The Gaming Corner</h1>
@@ -17,10 +17,10 @@ const Navbar: React.FC = () => {
                         <Link to="/games" className="nav-link text-dark fs-5 fw-medium mx-3">VIDEO GAMES</Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/selection" className="nav-link text-dark fs-5 fw-medium mx-3">CONSOLES</Link>
+                        <Link to="/consoles" className="nav-link text-dark fs-5 fw-medium mx-3">CONSOLES</Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/leaderboard" className="nav-link text-dark fs-5 fw-medium mx-3">WEEKLY DEALS</Link>
+                        <Link to="/weekly" className="nav-link text-dark fs-5 fw-medium mx-3">WEEKLY DEALS</Link>
                     </li>
                     <li className="nav-item">
                         <Link to="/contact" className="nav-link text-dark fs-5 fw-medium mx-3">CONTACT US</Link>

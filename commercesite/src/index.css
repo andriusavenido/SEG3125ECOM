@@ -13,3 +13,35 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+    padding-top: 2rem;
+}
+
+#heroCarousel {
+  max-height: 50vh;
+  overflow: hidden;
+}
+
+#heroCarousel .carousel-item {
+  height: 50vh;
+}
+
+#heroCarousel .caro-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.custom-carousel-control {
+  width: 5%; 
+  height: 100%;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+  border: none;
+}
+
+.custom-carousel-control:hover {
+  background-color: rgba(0, 0, 0, 0.3); 
+  cursor: pointer;
+   width: 5%; 
+}

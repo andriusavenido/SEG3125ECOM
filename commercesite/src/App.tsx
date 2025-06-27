@@ -10,9 +10,11 @@ function App() {
   return (
     <>
     <BrowserRouter>
-    <Ribbon></Ribbon>
+    <div className="fixed-top"> 
+       <Ribbon></Ribbon>
     <Navbar/>
-    <div className="pages bg-light p-4 min-vh-100 text-dark">
+    </div>
+    <div className="pages bg-light p-4 min-vh-100 mt-5 text-dark">
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/games/:category?" element={<Games/>}></Route>
