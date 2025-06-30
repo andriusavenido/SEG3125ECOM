@@ -18,6 +18,8 @@ const Games: React.FC = () => {
         availability: [] as string[],
     });
 
+    const [searchTerm, setSearchTerm] = useState("");
+
     const [resultNum, setResultNum] = useState(0);
 
     const [activeFilters, setActiveFilters] = useState<String[]>([]);
@@ -60,13 +62,15 @@ const Games: React.FC = () => {
                     : false)
         };
 
+        const matchesSearch = searchTerm.trim() === "" || game.title.toLowerCase().includes(searchTerm.toLowerCase());
         return (
             matches("platform", game.platform) &&
             matches("genre", game.genre) &&
             matches("age_rating", game.age_rating) &&
             matches("tags", game.tags) &&
             matches("availability", game.availability) &&
-            priceInRange(game.price)
+            priceInRange(game.price) &&
+            matchesSearch
         );
     };
 
@@ -126,9 +130,6 @@ const Games: React.FC = () => {
         }
     }, [param])
 
-    useEffect(() => {
-        setResultNum(filteredGames.length)
-    }, [filterGames])
 
     useEffect(() => {
         const allActive = Object.values(filters).flat();
@@ -136,6 +137,9 @@ const Games: React.FC = () => {
     }, [filters])
 
     const filteredGames = gameItems.filter(filterGames);
+    useEffect(() => {
+        setResultNum(filteredGames.length)
+    }, [filteredGames])
 
     return (
         <div className="container-fluid mt-5 align-items-center">
@@ -143,12 +147,24 @@ const Games: React.FC = () => {
                 <h2 className="display-5 fw-medium text-info d-inline-block border-bottom border-3 border-primary">
                     VIDEO GAMES
                 </h2>
+                <p>Don't see a title? Contact us for any custom inquiries!</p>
             </div>
             <div className="row mt-4">
                 <FilterColumn filters={filters} onFilterChange={handleFilterChange} />
                 <div className="col-10">
                     <div className="row bg-primary my-2 p-1">
-                        <span>Results Found: {resultNum}</span>
+                        <div className="d-flex justify-content-start gap-3 align-items-center w-100">
+                            <span className="fw-medium">Results Found: {resultNum}</span>
+                            <span className="fw-medium ms-4">Search <i className="bi bi-search" /> </span> <input
+                                type="text"
+                                className="form-control"
+                                style={{ maxWidth: "250px" }}
+                                placeholder="Search by Name..."
+                                value={searchTerm}
+                                onChange={(e) => setSearchTerm(e.target.value)}
+                            />
+
+                        </div>
                     </div>
                     {activeFilters.length !== 0 && (
                         <div className="row">
