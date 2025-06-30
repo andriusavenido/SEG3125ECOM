@@ -1,28 +1,16 @@
+
+import type { GameProps } from '../context/CartContext';
 import React from 'react';
 
-type Game = {
-    title: string;
-    img: string;
-    platform: string;
-    genre: string[];
-    age_rating: string;
-    price: number;
-    og_price: number;
-    tags: string[];
-    release_date: string;
-    developer: string;
-    availability: string[];
-};
-
 type GameCardProps = {
-    game: Game;
+    game: GameProps;
 };
 
 const GameCard: React.FC<GameCardProps> = ({ game }) => {
     const gameImg = new URL(`../assets/gameimg/${game.img}`, import.meta.url).href;
 
     return (
-        <div className="card p-3 border-0 mx-1 p-3 bg-white rounded-0" style={{ maxWidth: '320px'}}>
+        <div className="card p-3 border-0 mx-1 p-3 border-top border-bottom border-5 border-secondary bg-light rounded-0 " style={{ maxWidth: '320px'}}>
             <img
                 src={gameImg}
                 alt={game.title}
@@ -53,7 +41,7 @@ const GameCard: React.FC<GameCardProps> = ({ game }) => {
                 
             </div>
             <div className="d-flex justify-content-center">
-                <button className="mt-2 btn btn-primary rounded-pill">Add to Cart</button>
+                <button className="mt-2 btn btn-primary rounded-pill fw-bold">ADD TO CART</button>
             </div>
         </div>
     );
