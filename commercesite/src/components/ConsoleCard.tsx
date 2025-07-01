@@ -1,11 +1,13 @@
-import type { ConsoleProps } from "../context/CartContext";
-
+import { type ConsoleProps, CartContext } from "../context/CartContext";
+import { useContext } from 'react';
 type ConsoleCardProps ={
     console:ConsoleProps
 }
 
 const ConsoleCard:React.FC<ConsoleCardProps> = ({console}) => {
      const consImg = new URL(`../assets/consoleimgs/${console.img}`, import.meta.url).href;
+
+     const{addToCart} = useContext(CartContext);
     return ( 
  <div className="card p-3 border-0 mx-1 p-3 border-top border-bottom border-5 border-secondary bg-light rounded-0 " style={{ maxWidth: '320px'}}>
             <img
@@ -36,7 +38,7 @@ const ConsoleCard:React.FC<ConsoleCardProps> = ({console}) => {
                 
             </div>
             <div className="d-flex justify-content-center">
-                <button className="mt-2 btn btn-primary rounded-pill fw-bold">ADD TO CART</button>
+                <button className="mt-2 btn btn-primary rounded-pill fw-bold" onClick={() => addToCart(console)}>ADD TO CART</button>
             </div>
         </div>
      );

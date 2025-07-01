@@ -1,6 +1,6 @@
 import { CartContext } from "../context/CartContext";
 import { useContext, useState } from "react";
-
+import { Link } from "react-router";
 
 const Checkout: React.FC = () => {
     //stages: cart review, shipping or pickup confirmation, payment confirmation, success and survey
@@ -76,7 +76,7 @@ const Checkout: React.FC = () => {
                         <hr />
                         <h3>Total Cost (with tax): ${totalPrice.toFixed(2)}</h3>
                     </div>
-                    <button className='btn btn-light mx-2 fw-bold' onClick={() => setStage(1)}>Proceed to Shipping Options</button>
+                    <button className='btn btn-light mx-2 fw-bold' disabled={cartItems.length==0} onClick={() => setStage(1)}>{cartItems.length==0?"Cart is Empty!":"Proceed to Shipping Options"}</button>
                 </div>
             </div>}
             {stage == 1 && <div className='row'>
@@ -168,10 +168,17 @@ const Checkout: React.FC = () => {
             </div>}
 
              {stage == 3 && <div className='row'>
-                <div className="col-12  bg-secondary text-dark p-3 mb-3 mb-md-0 p-3" style={{ minHeight: "400px" }}>
+                <div className="d-flex flex-column justify-content-center align-items-center bg-info text-light p-3 mb-3  p-3" style={{ minHeight: "200px" }}>
+                  <h3 className='fw-bold fs-1'><i className="bi bi-bag-check" /> YOUR ORDER HAS BEEN CONFIRMED</h3>
+                  <p>*An invoice and receipt should be arriving in your email inbox soon.</p>
+                    <Link to="/" className='btn btn-light mx-2 fw-bold my-1'> Go to Home Page</Link>
                    </div>
 
-                    <div className="col-12  bg-secondary text-dark p-3 mb-3 mb-md-0 p-3" style={{ minHeight: "400px" }}>
+                    <div className="d-flex flex-column justify-content-center align-items-center bg-secondary text-dark p-3 mb-3 p-3" style={{ minHeight: "200px" }}>
+                         <h3 className='fw-bold fs-1'><i className="bi bi-clipboard-check" /> Interested in a coupon for your next checkout? </h3>
+                         <p>Fill out our customer satisfaction survey and let us know how we can improve our business.</p>
+                    <Link to="/survey" className='btn btn-light mx-2 fw-bold my-1'> Fill Survey</Link>
+                        
                    </div>
 
             </div>}
