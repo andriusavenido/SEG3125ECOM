@@ -73,8 +73,34 @@
         "price": 59.99,
         "og_price": 59.99,
         "tags": ["Multiplayer","New Release"],
-        "release_date": "2024-05-18",
+        "release_date": "2025-05-18",
         "developer": "From Software",
+        "availability": ["In Stock"]
+    },
+    {
+        "title": "Call of Duty: Black Ops 6",
+        "img":"codxbox.png",
+         "platform": "Xbox Series X",
+        "genre": [ "Shooter", "Action"],
+        "age_rating": "Mature (M)",
+        "price": 59.99,
+        "og_price": 89.99,
+        "tags": ["Multiplayer"],
+        "release_date": "2024-10-25",
+        "developer": "Activision Blizzard",
+        "availability": ["In Stock"]
+    },
+    {
+        "title": "Super Mario Odyssey",
+        "img":"marioswitch.png",
+         "platform": "Nintendo Switch",
+        "genre": [ "Adventure"],
+        "age_rating": "Everyone 10+",
+        "price": 69.99,
+        "og_price": 79.99,
+        "tags": ["Single-player"],
+        "release_date": "2024-10-25",
+        "developer": "Nintendo",
         "availability": ["In Stock"]
     }
 ]

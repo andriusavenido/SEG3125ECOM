@@ -5,7 +5,17 @@
         "brand": "Nintendo",
         "price": 629.99,
         "og_price": 629.99,
-        "tags": ["Handheld","256 GB","4K Support","Best Seller","New Release","On Sale"],
+        "tags": ["Handheld","256 GB","4K Support","Best Seller","New Release"],
+        "release_date": "2025-06-05",
+        "availability": ["In Stock", "Stock Limited"]
+    },
+    {
+         "title": "Xbox Series X",
+        "img": "xbox.png",
+        "brand": "Xbox",
+        "price": 599.99,
+        "og_price": 729.99,
+        "tags": ["Home Console","1TB","4K Support","On Sale"],
         "release_date": "2025-06-05",
         "availability": ["In Stock", "Stock Limited"]
     }
