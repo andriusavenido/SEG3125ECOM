@@ -26,7 +26,7 @@ const FilterColumn: React.FC<FilterColumnProps> = ({ filters, onFilterChange }) 
 
             <div className="accordion mt-4" id="accordionFilters">
                 <AccordionItem title="Genre" category="genre" options={["Action", "Adventure", "RPG", "Shooter", "Sports", "Strategy"]} filters={filters} onFilterChange={onFilterChange} />
-                <AccordionItem title="Age Rating" category="age_rating" options={["Everyone", "Everyone 10+", "Teen (T)", "Mature (M)", "Adults Only"]} filters={filters} onFilterChange={onFilterChange} />
+                <AccordionItem title="Age Rating" category="age_rating" options={["Everyone", "Everyone 10+", "Teen (T)", "Mature (M)"]} filters={filters} onFilterChange={onFilterChange} />
                 <AccordionItem title="Price" category="price" options={["Under $20", "$20 - $40", "$40 - $60", "$60+"]} filters={filters} onFilterChange={onFilterChange} />
                 <AccordionItem title="Tags" category="tags" options={["Single-player", "Story Rich", "Multiplayer", "Open World", "Best Seller", "Upcoming","New Release"]} filters={filters} onFilterChange={onFilterChange} />
                 <AccordionItem title="Availability" category="availability" options={["In Stock", "Out of Stock", "Digital Only", "Physical Only"]} filters={filters} onFilterChange={onFilterChange} />

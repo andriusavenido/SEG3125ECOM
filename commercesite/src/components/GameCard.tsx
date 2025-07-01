@@ -1,6 +1,6 @@
 
-import type { GameProps } from '../context/CartContext';
-import React from 'react';
+import { type GameProps,CartContext } from '../context/CartContext';
+import { useContext } from 'react';
 
 type GameCardProps = {
     game: GameProps;
@@ -8,6 +8,8 @@ type GameCardProps = {
 
 const GameCard: React.FC<GameCardProps> = ({ game }) => {
     const gameImg = new URL(`../assets/gameimg/${game.img}`, import.meta.url).href;
+
+    const{addToCart} = useContext(CartContext);
 
     return (
         <div className="card p-3 border-0 mx-1 p-3 border-top border-bottom border-5 border-secondary bg-light rounded-0 " style={{ maxWidth: '320px'}}>
@@ -41,7 +43,7 @@ const GameCard: React.FC<GameCardProps> = ({ game }) => {
                 
             </div>
             <div className="d-flex justify-content-center">
-                <button className="mt-2 btn btn-primary rounded-pill fw-bold">ADD TO CART</button>
+                <button className="mt-2 btn btn-primary rounded-pill fw-bold" onClick={() => addToCart(game)}>ADD TO CART</button>
             </div>
         </div>
     );

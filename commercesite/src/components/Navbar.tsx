@@ -1,9 +1,13 @@
 import { Link } from "react-router";
 import { useState } from "react";
+import { useContext } from "react";
+import { CartContext } from "../context/CartContext";
 
 const Navbar: React.FC = () => {
     const [showGameDropdown, setShowGameDropdown] = useState(false);
     const [showConDropdown,setConDropdown] = useState(false);
+
+    const {cartItems} = useContext(CartContext);
     return (
         <>
             <div className="navbar  bg-light text-info p-3 px-4 d-flex align-items-center justify-content-center row">
@@ -43,10 +47,12 @@ const Navbar: React.FC = () => {
 
                 <div className="col-3 d-flex justify-content-end">
                     <Link to="/checkout" className="text-dark fs-5 fw-medium d-flex align-items-center" style={{ textDecoration: 'none' }}>
-                        <i className="bi bi-cart me-2"></i>
-                        <span className=" rounded-pill bg-info p-1 fs-6 text-white"  >
+                        <i className="bi bi-cart-fill text-info me-2 fs-3"></i> 
+                        {cartItems.length==0?<span className=" rounded-pill bg-info p-2 fs-6 text-white"  >
                             Empty
-                        </span>
+                        </span> :<span className=" rounded-pill bg-info p-2 fs-6 text-white"  >
+                            {cartItems.length} Item(s)
+                        </span>}
                     </Link>
 
                 </div>

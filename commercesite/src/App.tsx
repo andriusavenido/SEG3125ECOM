@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Games from "./pages/Games";
 import Consoles from "./pages/Consoles";
+import Checkout from "./pages/Checkout";
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
         <Route path="/" element={<Home/>} />
         <Route path="/games/:category?" element={<Games/>}></Route>
         <Route path="/consoles/:category?" element={<Consoles/>}></Route>
+        <Route path="/checkout" element={<Checkout/>}></Route>
         <Route path="*" element={<>404. Page not found!</>} />
       </Routes>
     </div>
