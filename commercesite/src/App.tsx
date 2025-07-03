@@ -25,6 +25,12 @@ function App() {
         <Route path="/checkout" element={<Checkout/>}></Route>
         <Route path="/weekly" element={<Weekly/>}></Route>
         <Route path="/survey" element={<Survey/>}></Route>
+        <Route path="/contact" element={ <div className='container bg-secondary text-dark py-5 px-4 d-flex flex-column '>
+                    <h3 className='fw-bold fs-1 '><i className="bi bi-telephone" /> Contact Us</h3>
+                    <p className="text-dark fs-3">PHONE: <span className="text-info">(123) 456-7890</span></p>
+                     <p className="text-dark fs-3">EMAIL: <span className="text-info">gamecornerottawa@gmail.com</span></p>
+                     <p className="text-dark fs-3">ADDRESS: <span className="text-info">123 Rainbow Road, Ottawa Ontario</span></p>
+                </div>}></Route>
         <Route path="*" element={<>404. Page not found!</>} />
       </Routes>
     </div>
