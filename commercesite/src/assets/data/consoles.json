@@ -18,5 +18,55 @@
         "tags": ["Home Console","1TB","4K Support","On Sale"],
         "release_date": "2025-06-05",
         "availability": ["In Stock", "Stock Limited"]
+    },
+     {
+         "title": "Xbox Series S + Game Pass 12 Months",
+        "img": "xboxS.png",
+        "brand": "Xbox",
+        "price": 499.99,
+        "og_price": 599.99,
+        "tags": ["Home Console","1TB","4K Support","On Sale","Bundle"],
+        "release_date": "2024-10-15",
+        "availability": ["Out of Stock"]
+    },
+     {
+         "title": "Play Station 5",
+        "img": "ps5.png",
+        "brand": "PlayStation",
+        "price": 649.99,
+        "og_price": 649.99,
+        "tags": ["Home Console","1TB","4K Support","Best Seller"],
+        "release_date": "2025-06-05",
+        "availability": ["In Stock", "Stock Limited"]
+    },
+     {
+         "title": "Play Station 5 Pro",
+        "img": "ps5pro.png",
+        "brand": "PlayStation",
+        "price": 959.99,
+        "og_price": 959.99,
+        "tags": ["Home Console","1TB","4K Support"],
+        "release_date": "2025-06-05",
+        "availability": ["In Stock", "Stock Limited"]
+    },
+     {
+         "title": "Nintendo Switch OLED + Super Mario Wonder",
+        "img": "switchonebun.png",
+        "brand": "Nintendo",
+        "price": 449.99,
+        "og_price": 449.99,
+        "tags": ["Handheld","Bundle"],
+        "release_date": "2024-10-15",
+        "availability": ["In Stock"]
+    },
+       {
+         "title": "Nintendo Wii",
+        "img": "wii.png",
+        "brand": "Nintendo",
+        "price": 149.99,
+        "og_price": 149.99,
+        "tags": ["Home Console"],
+        "release_date": "2024-10-15",
+        "availability": ["In Stock"]
     }
 ]
