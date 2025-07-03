@@ -144,7 +144,7 @@ const Games: React.FC = () => {
     return (
         <div className="container-fluid mt-5 align-items-center">
             <div className="text-center">
-                <h2 className="display-5 fw-medium text-info d-inline-block border-bottom border-3 border-primary">
+                <h2 className="display-5 fw-medium text-dark d-inline-block border-bottom border-3 border-primary">
                     VIDEO GAMES
                 </h2>
                 <p>Don't see a title? Contact us for any custom inquiries!</p>

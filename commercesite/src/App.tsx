@@ -6,6 +6,7 @@ import Games from "./pages/Games";
 import Consoles from "./pages/Consoles";
 import Checkout from "./pages/Checkout";
 import Weekly from "./pages/Weekly";
+import Survey from "./pages/Survey";
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
         <Route path="/consoles/:category?" element={<Consoles/>}></Route>
         <Route path="/checkout" element={<Checkout/>}></Route>
         <Route path="/weekly" element={<Weekly/>}></Route>
+        <Route path="/survey" element={<Survey/>}></Route>
         <Route path="*" element={<>404. Page not found!</>} />
       </Routes>
     </div>
