@@ -62,7 +62,7 @@
         "tags": ["Multiplayer"],
         "release_date": "2024-06-16",
         "developer": "WB Entertainment",
-        "availability": ["In Stock"]
+        "availability": ["Digital Only"]
     },
      {
         "title": "Elden Ring: Nighteign",
@@ -102,5 +102,18 @@
         "release_date": "2024-10-25",
         "developer": "Nintendo",
         "availability": ["In Stock"]
+    },
+     {
+        "title": "Final Fantasy Tactics: The Ivalice Chronicles",
+        "img":"fftactics.png",
+         "platform": "PlayStation 5",
+        "genre": ["Adventure", "Strategy"],
+        "age_rating": "Teen (T)",
+        "price": 34.99,
+        "og_price": 64.99,
+        "tags": ["Single-player", "Story Rich", "New Release"],
+        "release_date": "2025-06-26",
+        "developer": "Square Enix",
+        "availability": ["Physical Only"]
     }
 ]
